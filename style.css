@@ -1,0 +1,67 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+body{
+    margin: 0;
+    background-color: orangered;
+    font-family: 'Roboto', sans-serif;
+}
+.card{
+    list-style: none;
+    background-color: rgb(234, 229, 229);
+    text-align: center;
+    border-radius: 3px;
+    box-shadow: 0 4px 8px rgba(3,4,4,0.2);
+    cursor: pointer;
+    color: rgb(56, 15, 95);
+
+}
+.card:hover{
+    animation: bounce 0.5s linear;
+}
+@keyframes bounce{
+    20%{
+        transform: translateY(-5px);
+    }
+    40%{
+        transform: translateY(0px);
+    }
+    60%{
+        transform: translateY(3px);
+    }
+    80%{
+        transform: translateY(0px);
+    }
+}
+#pokedex{
+    padding-inline-start: 0;
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(280px,1fr));
+    grid-gap: 20px;
+
+}
+.title{
+    text-transform: uppercase;
+    font-size: 26px;
+    /* font-weight: normal; */
+    margin-bottom: 0;
+    margin-top: 5px;
+}
+.type{
+    margin-top: 5px;
+    
+}
+.image{
+    /* margin: 0 auto; */
+    height: 180px;
+    margin-bottom: 0;
+
+}
+.container{
+    padding: 40px;
+    margin: 0 auto;
+}
+h1{
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 50px;
+    color: white;
+}
